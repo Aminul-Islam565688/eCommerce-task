@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+// section tag
+
+.section-headline {
+  text-align: center;
+  color: #6d4320;
+  span {
+    color: #72be44;
+  }
+}
+
 .App {
   text-align: center;
 }

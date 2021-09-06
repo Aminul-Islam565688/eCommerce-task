@@ -6,7 +6,9 @@ import organicImg from '../../assets/images/organic.png';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import Premium from '../../components/Premium/Premium';
+import Advantage from '../../components/Advantage/Advantage';
 import RecentProduct from '../../components/RecentProduct/RecentProduct';
+import Footer from '../../components/Footer/Footer';
 import './Home.scss';
 const Home = () => {
     return (
@@ -49,6 +51,8 @@ const Home = () => {
                 <img className='free-delivery-img' src={freeDeliveryImg} alt="" />
             </div>
             <RecentProduct />
+            <Advantage />
+            <Footer />
         </div>
     );
 };

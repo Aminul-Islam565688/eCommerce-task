@@ -1,0 +1,132 @@
+.footer-main {
+  background: #6d4320;
+  color: white;
+  .footer-wrapper {
+    margin: 0 10%;
+    .footer-feedback {
+      text-align: center;
+      padding-top: 40px;
+      .footer-service-img {
+        img {
+          width: 100px;
+        }
+      }
+      .footer-service-text {
+        p {
+          color: lightgrey;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .footer-subscribe {
+      width: 420px;
+      display: block;
+      margin: auto;
+      background: #73be44;
+      border-radius: 30px;
+      border: 1px solid white;
+      overflow: hidden;
+      label {
+        input {
+          font-size: 20px;
+          border: none;
+          width: 60%;
+          height: 45px;
+          background: none;
+          padding: 10px 20px;
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          width: 33%;
+          font-size: 16px;
+          background: white;
+          padding: 12px 19px;
+          color: #60381a;
+          border-radius: 30px;
+          border: none;
+          margin-left: 25px;
+          margin-bottom: 3px;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background: #60381a;
+            color: white;
+          }
+        }
+      }
+    }
+    .footer-address-section {
+      display: flex;
+      margin-top: 30px;
+      justify-content: center;
+      .footer-logo-details {
+        width: 35%;
+      }
+      .footer-address-links {
+        display: flex;
+        width: 65%;
+        justify-items: space-around;
+        .footer-links {
+          width: 50%;
+          margin-top: 15px;
+          h5 {
+            font-size: 22px;
+            margin-left: 50px;
+          }
+          div {
+            display: flex;
+            justify-content: space-around;
+            ul {
+              li {
+                list-style: none;
+                line-height: 30px;
+                a {
+                  text-decoration: none;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+        .footer-contact {
+          width: 50%;
+          margin-top: 15px;
+          h5 {
+            font-size: 22px;
+          }
+          div {
+            ul {
+              li {
+                list-style: none;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  margin-top: 30px;
+  padding: 20px 113px;
+  .copyright-footer-icon {
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        a {
+          color: white;
+          font-size: 20px;
+          margin: 0 3px;
+          padding: 0 10px;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
