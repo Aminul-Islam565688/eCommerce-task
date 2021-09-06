@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
+import Premium from '../../components/Premium/Premium';
 import './Home.scss';
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
             </div>
             <Navbar />
             <Header />
+            <Premium />
         </div>
     );
 };
