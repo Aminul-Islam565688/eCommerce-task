@@ -1,6 +1,7 @@
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import './Home.scss';
 
@@ -30,6 +31,7 @@ const Home = () => {
                 </div>
             </div>
             <Navbar />
+            <Header />
         </div>
     );
 };
