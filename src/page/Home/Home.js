@@ -1,11 +1,13 @@
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import freeDeliveryImg from '../../assets/images/freeDelivery.jpg';
+import organicImg from '../../assets/images/organic.png';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import Premium from '../../components/Premium/Premium';
+import RecentProduct from '../../components/RecentProduct/RecentProduct';
 import './Home.scss';
-
 const Home = () => {
     return (
         <div className='home-main'>
@@ -34,6 +36,19 @@ const Home = () => {
             <Navbar />
             <Header />
             <Premium />
+            <div className='take-a-tour'>
+                <div className="tour-wrapper">
+                    <h1>Take a tours With <span>Buniyadi</span></h1>
+                    <div className='tour-img'>
+                        <img src={organicImg} alt="" />
+                        <img src={organicImg} alt="" />
+                        <img src={organicImg} alt="" />
+                        <img src={organicImg} alt="" />
+                    </div>
+                </div>
+                <img className='free-delivery-img' src={freeDeliveryImg} alt="" />
+            </div>
+            <RecentProduct />
         </div>
     );
 };
