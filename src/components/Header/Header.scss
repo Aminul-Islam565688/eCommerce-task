@@ -68,4 +68,70 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-main {
+    background-color: #f7f5f3;
+    height: 645px;
+    width: 426px;
+    overflow: hidden;
+    .header-wrapper {
+      margin: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      .header-text {
+        width: 100%;
+        position: relative;
+        top: 239px;
+        p {
+          color: #6d4320;
+          font-size: 42px;
+          span {
+            color: #73be44;
+            font-weight: 600;
+          }
+        }
+        div {
+          button {
+            background-color: transparent;
+            border: 1px solid #6d4320;
+            border-radius: 40px;
+            padding: 13px 60px;
+            color: #6d4320;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            margin: 10px 0px 0px 0px;
+            &:hover {
+              background-color: #6d4320;
+              color: #f7f5f3;
+            }
+          }
+        }
+      }
+      .header-img {
+        width: 100%;
+        position: relative;
+        margin: 40px 0px 0px 40px;
+        top: 100px;
+        left: -62px;
+        img {
+          position: absolute;
+        }
+        img:first-child {
+          left: 68px;
+          width: 170px;
+          top: 72px;
+        }
+        img:nth-child(2) {
+          left: 69px;
+          width: 350px;
+          top: -86px;
+          z-index: 100;
+        }
+        img:last-child {
+          left: 239px;
+          width: 181px;
+          top: 68px;
+        }
+      }
+    }
+  }
 }

@@ -77,5 +77,33 @@
     .site-setting {
       display: none;
     }
+    .take-a-tour {
+      width: 426px;
+      .tour-wrapper {
+        margin: 0;
+        padding-bottom: 25px;
+        h1 {
+          text-align: center;
+          padding: 30px 0px;
+          color: #6d4320;
+          // font-size: 20px;
+          span {
+            color: #72be44;
+          }
+        }
+        .tour-img {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          img {
+            width: 160px;
+            margin: auto;
+          }
+        }
+      }
+      .free-delivery-img {
+        width: 100%;
+      }
+    }
   }
 }
