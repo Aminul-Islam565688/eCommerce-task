@@ -1,6 +1,7 @@
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import Navbar from '../../components/Navbar/Navbar';
 import './Home.scss';
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Navbar />
         </div>
     );
 };
