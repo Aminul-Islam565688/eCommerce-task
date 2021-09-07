@@ -1,6 +1,7 @@
 .advantage-main {
   .advantage-wrapper {
     margin: 0 10%;
+    padding-bottom: 35px;
     .advantage-carts {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -50,11 +51,119 @@
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-}
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .advantage-main {
+    width: 769px;
+    .advantage-wrapper {
+      margin: 0 30px 40px 30px;
+      h1 {
+        padding-top: 31px;
+      }
+      .advantage-carts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-gap: 20px;
+        margin-top: 35px;
+        .advantage-single-carts {
+          border: 1px solid lightgrey;
+          .blog-img {
+            width: 100%;
+            img {
+              width: 100%;
+              height: 150px;
+            }
+          }
+          .blog-content {
+            padding: 15px;
+            h3 {
+              color: #565656;
+            }
+            p {
+              margin: 10px 0px;
+              &:first-child {
+                color: #dddddd;
+              }
+              &:last-child {
+                color: #c9c9c9;
+              }
+            }
+            button {
+              background-color: transparent;
+              border: 1px solid #6d4320;
+              border-radius: 40px;
+              padding: 13px 35px;
+              color: #6d4320;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              margin: 10px 0px 0px 0px;
+              &:hover {
+                background-color: #6d4320;
+                color: #f7f5f3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  .advantage-main {
+    width: 481px;
+    .advantage-wrapper {
+      margin: 0 30px 40px 30px;
+      h1 {
+        padding-top: 31px;
+      }
+      .advantage-carts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        grid-gap: 20px;
+        margin-top: 35px;
+        .advantage-single-carts {
+          border: 1px solid lightgrey;
+          .blog-img {
+            width: 100%;
+            img {
+              width: 100%;
+              height: 150px;
+            }
+          }
+          .blog-content {
+            padding: 15px;
+            h3 {
+              color: #565656;
+            }
+            p {
+              margin: 10px 0px;
+              &:first-child {
+                color: #dddddd;
+              }
+              &:last-child {
+                color: #c9c9c9;
+              }
+            }
+            button {
+              background-color: transparent;
+              border: 1px solid #6d4320;
+              border-radius: 40px;
+              padding: 13px 35px;
+              color: #6d4320;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+              margin: 10px 0px 0px 0px;
+              &:hover {
+                background-color: #6d4320;
+                color: #f7f5f3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .advantage-main {
