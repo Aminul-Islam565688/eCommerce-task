@@ -1,4 +1,6 @@
-import React from 'react';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import cartIcon from '../../assets/icon/cart.png';
 import searchIcon from '../../assets/icon/loupe.png';
@@ -8,6 +10,13 @@ import './Navbar.scss';
 
 
 const Navbar = () => {
+
+    const [active, setActive] = useState(true)
+
+    const handleNavbar = () => {
+        document.getElementById('navbarUNList').classList.toggle('active');
+    }
+
     return (
         <div className='navbar-main'>
             <div className="navbar-wrapper">
@@ -16,7 +25,7 @@ const Navbar = () => {
                 </Link>
                 <div className='navbar-links'>
                     <div className='navbar-page-links'>
-                        <ul>
+                        <ul >
                             <li>
                                 <Link to='/home'>Home</Link>
                             </li>
@@ -47,6 +56,33 @@ const Navbar = () => {
                         <img src={cartIcon} alt="" />
                     </div>
                 </div>
+                <div onClick={() => { handleNavbar(); setActive(!active) }} className='menu-bar'>
+                    {active ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faTimes} />}
+                </div>
+            </div>
+            <div id='navbarUNList'>
+                <li>
+                    <Link to='/home'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/shope'>
+                        <select>
+                            <option hidden selected>Shop</option>
+                            <option value="">Honey</option>
+                            <option value="">Rice</option>
+                            <option value="">Dates</option>
+                        </select>
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/blog'>Blog</Link>
+                </li>
+                <li>
+                    <Link to='/about'>About</Link>
+                </li>
+                <li>
+                    <Link to='/contact'>Contact</Link>
+                </li>
             </div>
         </div>
     );
